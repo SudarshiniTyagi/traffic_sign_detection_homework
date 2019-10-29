@@ -26,6 +26,8 @@ parser.add_argument('--model3', type=str, metavar='M',
                     help="the model file to be evaluated. Usually it is of the form model_X.pth")
 parser.add_argument('--model4', type=str, metavar='M',
                     help="the model file to be evaluated. Usually it is of the form model_X.pth")
+parser.add_argument('--model5', type=str, metavar='M',
+                    help="the model file to be evaluated. Usually it is of the form model_X.pth")
 parser.add_argument('--outfile', type=str, default='gtsrb_kaggle.csv', metavar='D',
                     help="name of the output csv file")
 
@@ -57,6 +59,12 @@ model_4.load_state_dict(state_dict_4)
 model_4.eval()
 model_4.to("cuda:0")
 
+state_dict_5 = torch.load(args.model5)
+model_5 = Net3()
+model_5.load_state_dict(state_dict_5)
+model_5.eval()
+model_5.to("cuda:0")
+
 
 
 
@@ -86,7 +94,8 @@ for f in tqdm(os.listdir(test_dir)):
         output_2 = model_2(data)
         output_3 = model_3(data)
         output_4 = model_4(data2)
-        output = (output_1+output_2+output_3+output_4)/4
+        output_5 = model_5(data)
+        output = (output_1+output_2+output_3+output_4+output_5)/5
         pred = output.data.max(1, keepdim=True)[1]
 
         file_id = f[0:5]
