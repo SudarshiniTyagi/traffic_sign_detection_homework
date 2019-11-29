@@ -20,7 +20,7 @@ Full project report can be found [here](https://drive.google.com/file/d/1ZF7NpSZ
 | ResNet-18, ResNet-18 with Focal loss | Average | 98.9%|
 | ResNet-18, ResNet-18(different checkpoint), Resnet-34 | Average | 99.065%|
 | ResNet-18, GoogLeNet, ResNet-34 | Average | 99.144%|
-| ResNet-18, GoogLeNet, ResNet-34 | Average | 99.144%|
+| ResNet-18, GoogLeNet, ResNet-34, STN, ResNet-34 with Focal loss | Average | 99.572|
 
 
 
