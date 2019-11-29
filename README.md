@@ -14,24 +14,13 @@ Full project report can be found [here](https://drive.google.com/file/d/1ZF7NpSZ
 
 # Experiments and Results
 
-\begin{small}
-\begin{tabular}{L{4cm}C{1.5cm}R{1cm}}
-Models & Type of Ensemble & Test Accuracy \\
-\hline
-\hline
-ResNet-18, STN & Voting & 98.4 \\
-\hline
-ResNet-18, ResNet-18 with Focal loss & Average & 98.9\\ 
-\hline
-ResNet-18, ResNet-18(different checkpoint), Resnet-34 & Average & 99.065\\
-\hline
-ResNet-18, GoogLeNet, ResNet-34 & Average & 99.144\\
-\hline
-ResNet-18, GoogLeNet, ResNet-34, STN & Average & 99.477\\
-\hline
-ResNet-18, GoogLeNet, ResNet-34, STN, ResNet-34 with Focal loss & Average & 99.572\\
+| Model        | Type of Ensemble           | Test Accuracy  |
+| ------------- |:-------------:| -----:|
+| ResNet-18, STN       | Voting | 98.4% |
+| ResNet-18, ResNet-18 with Focal loss | Average | 98.9|
+| ResNet-18, ResNet-18(different checkpoint), Resnet-34 | Average | 99.065|
+| ResNet-18, GoogLeNet, ResNet-34 | Average | 99.144|
+| ResNet-18, GoogLeNet, ResNet-34 | Average | 99.144|
 
-\end{tabular}
-\end{small}
 
 
